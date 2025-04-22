@@ -1,8 +1,8 @@
 async function fetchData(file) {
-  console.log(`Fetching data from: ${file}`); // Debugging fetch path
+  console.log(`Fetching data from: ${file}`); 
   const response = await fetch(file);
   if (!response.ok) {
-    console.error(`Failed to fetch ${file}:`, response.statusText); // Debugging fetch error
+    console.error(`Failed to fetch ${file}:`, response.statusText); 
     throw new Error(`Failed to load ${file} data`);
   }
   const data = await response.json();
@@ -60,15 +60,13 @@ function generateTable(containerId, data, columns = 5) {
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    // Obsługa tabeli studentów (dla index.html)
     const studentsTableContainer = document.querySelector("#students-table");
     if (studentsTableContainer) {
-      const students = await fetchData('students.json');
-      console.log('Students data:', students);
+      const students = await fetchData('./students.json');
+      console.log('Students data:', students); 
       generateTable("#students-table", students, 5);
     }
 
-    // Obsługa tabeli postępów (dla progress.html)
     const progressTableContainer = document.querySelector("#progress-table tbody");
     if (progressTableContainer) {
       const actions = await fetchData('actions.json');

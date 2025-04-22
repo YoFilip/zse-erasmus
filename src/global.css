@@ -158,6 +158,92 @@ body {
   transform: translate(-50%, 10px);
 }
 
+
+#fullscreen-progress-title {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 2rem;
+  font-weight: 750;
+  color: white;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+#fullscreen-progress-text {
+  font-size: 1.2rem;
+  font-weight: 250;
+  line-height: 1.8;
+  color: white;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#fullscreen-progress-content {
+  position: relative;
+  z-index: 2;
+  color: var(--white-color);
+}
+
+#scroll-progress-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  color: var(--white-color);
+  text-decoration: none;
+  z-index: 3;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#scroll-progress-arrow:hover {
+  transform: translate(-50%, 10px);
+}
+
+#navbar-progress {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  padding: 20px 50px;
+}
+
+#logo-progress {
+  margin-left: 10rem;
+  font-size: 1.2rem !important;
+  font-weight: bold;
+  color: var(--white-text-color);
+  text-decoration: none;
+  display: inline-block;
+}
+
+#navbar-progress ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  margin-right: 10rem;
+}
+
+#navbar-progress li {
+  display: inline;
+}
+
+#navbar-progress a {
+  color: var(----white-text-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+
 #about-us {
   text-align: center;
   padding: 50px 20px;
@@ -268,89 +354,7 @@ body {
   text-align: center;
 }
 
-#fullscreen-progress-title {
-  text-align: justify;
-  text-justify: inter-word;
-  font-size: 2rem;
-  font-weight: 750;
-  color: white;
-  margin-bottom: 20px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
-
-#fullscreen-progress-text {
-  font-size: 1.2rem;
-  font-weight: 250;
-  line-height: 1.8;
-  color: white;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-#fullscreen-progress-content {
-  position: relative;
-  z-index: 2;
-  color: var(--white-color);
-}
-
-#scroll-progress-arrow {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 3rem;
-  color: var(--white-color);
-  text-decoration: none;
-  z-index: 3;
-  cursor: pointer;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-#scroll-progress-arrow:hover {
-  transform: translate(-50%, 10px);
-}
-
-#navbar-progress {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-  padding: 20px 50px;
-}
-
-#logo-progress {
-  margin-left: 10rem;
-  font-size: 1.2rem !important;
-  font-weight: bold;
-  color: var(--white-text-color);
-  text-decoration: none;
-  display: inline-block;
-}
-
-#navbar-progress ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 2rem;
-  margin-right: 10rem;
-}
-
-#navbar-progress li {
-  display: inline;
-}
-
-#navbar-progress a {
-  color: var(----white-text-color);
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 600;
-  transition: color 0.3s ease;
-=======
+/* Do poprawy */
 #expectations {
   width: 100%;
   padding: 40px 0;
