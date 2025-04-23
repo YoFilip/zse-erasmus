@@ -33,7 +33,7 @@ function populateExpectations(testimonials) {
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const testimonials = await fetchExpectations("../studentExpectations.json");
+    const testimonials = await fetchExpectations("./studentExpectations.json");
     populateExpectations(testimonials);
   } catch (error) {
     console.error("Error loading testimonials:", error);
