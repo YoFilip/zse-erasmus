@@ -28,10 +28,6 @@ body {
 }
 
 #navbar, #navbar-progress, #navbar-gallery {
-=======
-#navbar,
-#navbar-progress {
-
   position: absolute;
   top: 0;
   width: 100%;
@@ -455,7 +451,7 @@ body {
     flex-basis: auto;
   }
 }
-=======
+
 #project-description table td,
 th {
   border: 1px solid #e5e5e5;
