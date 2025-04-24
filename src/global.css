@@ -27,8 +27,11 @@ body {
   font-style: normal;
 }
 
+#navbar, #navbar-progress, #navbar-gallery {
+=======
 #navbar,
 #navbar-progress {
+
   position: absolute;
   top: 0;
   width: 100%;
@@ -49,7 +52,7 @@ body {
   display: inline-block;
 }
 
-#navbar ul {
+#navbar ul, #navbar-gallery ul  {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -58,11 +61,11 @@ body {
   margin-right: 10rem;
 }
 
-#navbar li {
+#navbar li, #navbar-gallery li {
   display: inline;
 }
 
-#navbar a {
+#navbar a, #navbar-gallery a {
   color: var(----white-text-color);
   text-decoration: none;
   font-size: 0.9rem;
@@ -79,6 +82,18 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--white-color);
+  text-align: center;
+  overflow: hidden;
+}
+
+#header-gallery {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-text-color);
   text-align: center;
   overflow: hidden;
 }
@@ -346,6 +361,101 @@ body {
   width: 95%;
 }
 
+#project-description table td,th {
+  padding: 5px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.image-grid {
+  padding: 5px;
+}
+
+.image-row {
+  display: flex;  
+}
+
+.image-row .image {
+  margin: 5px;
+  height: 240px;  
+}
+
+.image { 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.image-01 {
+  background-image: url('../assets/hero_image.jpg'); 
+  flex: 1;  
+}
+
+.image-02 {
+  background-image: url('../assets/hero_progress_image.jpg'); 
+  flex: 1;  
+}
+
+.image-03 {
+  background-image: url('../assets/hero_image.jpg');
+  flex: 1;
+}
+
+.image-04 {
+  background-image: url('../assets/hero_progress_image.jpg');
+  flex: 1;
+}
+
+.image-05 {
+  background-image: url('../assets/hero_image.jpg');
+  flex: 1;
+}
+
+.image-06 {
+  background-image: url('../assets/hero_progress_image.jpg');
+  flex: 1;
+}
+
+.image-07 {
+  background-image: url('../assets/hero_image.jpg');
+  flex: 1;
+}
+
+.image-08 {
+  background-image: url('../assets/hero_progress_image.jpg');
+  flex: 1;
+}
+
+.image-09 {
+  background-image: url('../assets/hero_image.jpg');
+  flex: 1;
+}
+
+.image-10 {
+  background-image: url('../assets/hero_progress_image.jpg');
+  flex: 1;
+}
+
+.image-11 {
+  background-image: url('../assets/hero_image.jpg');
+  flex: 1;
+}
+
+.image-12 {
+  background-image: url('../assets/hero_progress_image.jpg');
+  flex: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .image-row {
+    flex-direction: column;
+  }
+  
+  .image-row .image {
+    flex-basis: auto;
+  }
+}
+=======
 #project-description table td,
 th {
   border: 1px solid #e5e5e5;
