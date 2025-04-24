@@ -1,4 +1,4 @@
-const slider = document.querySelector('.gallery-mainpage');
+const slider = document.querySelector('.gallery');
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -49,7 +49,7 @@ slider.addEventListener('touchmove', (e) => {
 });
 
 function autoScrollGallery() {
-    const slider = document.querySelector('.gallery-mainpage');
+    const slider = document.querySelector('.gallery');
     let scrollAmount = 0;
     const scrollStep = 1;
     const scrollInterval = 20;
