@@ -36,7 +36,7 @@ function generateTable(containerId, data, columns = 5) {
         if (person) {
           const content = person.isStudent
             ? `${person.name} ${person.surname}`
-            : `${person.name} ${person.surname}`;
+            : `${person.name} ${person.surname} (Opiekun)`;
           row.appendChild(createCell(content));
         } else {
           row.appendChild(createCell("—————————"));
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (studentsTableContainer) {
       const students = await fetchData('./students.json');
       console.log('Students data:', students); 
-      generateTable("#students-table", students, 5);
+      generateTable("#students-table", students, 3);
     }
 
     const progressTableContainer = document.querySelector("#progress-table tbody");
