@@ -579,3 +579,51 @@ th {
   background-color: var(--navbar-text-color);
   transform: scale(1.05);
 }
+
+footer {
+  padding: 0 60px;
+}
+
+.footer-authors,
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.authors,
+.footer-link
+{
+  color: var(--primary-text-color);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer-partners{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.footer-logo{
+  height: 10rem;
+}
+
+.footer-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-informacja,
+.footer-numer{
+  color: var(--secondary-text-color);
+  font-size: .9rem;
+  font-weight: 400;
+}
+
