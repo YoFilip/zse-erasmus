@@ -242,7 +242,7 @@ body {
 #project-description {
   padding: 0 20px;
   margin: 5rem 4rem;
-  min-height: 60vh;
+  min-height: 50vh;
 }
 
 .project-title,
@@ -444,6 +444,7 @@ th {
 
 footer {
   padding: 0 60px;
+  margin: 5rem 0 0 0;
 }
 
 .footer-authors,
@@ -492,6 +493,7 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+  /* Responsive styles for smaller screens (phones) Index.html*/
   #navbar {
     display: none;
   }
@@ -573,4 +575,37 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+  /* Responsive styles for smaller screens (phones) progress.html*/
+  #navbar-progress {
+    display: none;
+  }
+  #fullscreen-progress-image {
+    min-height: 20rem;
+  }
+
+  #fullscreen-progress-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 10px;
+  }
+  #fullscreen-progress-text {
+    font-size: 1rem;
+    margin: 10px;
+    padding: 0.5rem;
+  }
+
+  #project-description {
+    margin: 5rem 0.5rem 5rem 0.5rem;
+  }
+
+  #progress-table {
+    font-size: 0.9rem;
+    overflow-x:auto;
+  }
+
+  /* Responsive styles for smaller screens (phones) gallery.html*/
+  #navbar-gallery{
+    display: none;
+  }
+  
 }

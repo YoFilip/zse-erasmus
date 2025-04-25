@@ -62,14 +62,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     const studentsTableContainer = document.querySelector("#students-table");
     if (studentsTableContainer) {
-      const students = await fetchData('./students.json');
+      const students = await fetchData('src/students.json');
       console.log('Students data:', students); 
       generateTable("#students-table", students, 3);
     }
 
     const progressTableContainer = document.querySelector("#progress-table tbody");
     if (progressTableContainer) {
-      const actions = await fetchData('actions.json');
+      const actions = await fetchData('src/actions.json');
       console.log('Actions data:', actions);
       generateTable("#progress-table", actions);
     }
