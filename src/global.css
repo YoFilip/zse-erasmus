@@ -448,7 +448,7 @@ footer {
 
 .footer-authors,
 .footer-links {
-  display: flex;
+
   flex-direction: column;
 }
 
@@ -474,6 +474,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 1rem;
 }
 
 .footer-bottom{
@@ -552,5 +553,24 @@ footer {
   }
   #expectations-container{
     margin: 5rem 0 5rem 0.5rem;
+  }
+  footer{
+    padding: 0;
+  }
+  .footer-partners{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-top{
+    flex-direction: column;
+  }
+  .footer-authors, .footer-links{
+    align-items: center;
+    display: flex;
+  }
+  .footer-bottom{
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
   }
 }
