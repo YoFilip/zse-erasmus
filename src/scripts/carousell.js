@@ -1,4 +1,58 @@
-const slider = document.querySelector('.gallery');
+const slider = document.querySelector('.infinite-gallery');
+
+const imagesArray = [
+    { src: 'assets/hero_image.jpg', alt: 'Widok Alicante 1' },
+    { src: 'assets/hero_image.jpg', alt: 'Widok Alicante 2' },
+    { src: 'assets/hero_image.jpg', alt: 'Widok Alicante 3' },
+    { src: 'assets/hero_image.jpg', alt: 'Widok Alicante 4' },
+    { src: 'assets/hero_image.jpg', alt: 'Widok Alicante 5' },
+    { src: 'assets/hero_image.jpg', alt: 'Widok Alicante 6' }
+];
+
+function populateSlider() {
+    imagesArray.forEach(image => {
+        const li = document.createElement('li');
+        const img = document.createElement('img');
+        img.src = image.src;
+        img.alt = image.alt;
+        li.appendChild(img);
+        slider.appendChild(li);
+    });
+}
+
+function updateSlider() {
+    const firstChild = slider.firstElementChild;
+    const lastChild = slider.lastElementChild;
+
+    if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
+        const newImage = imagesArray.shift();
+        imagesArray.push(newImage);
+        const li = document.createElement('li');
+        const img = document.createElement('img');
+        img.src = newImage.src;
+        img.alt = newImage.alt;
+        li.appendChild(img);
+        slider.appendChild(li);
+        slider.removeChild(firstChild);
+        slider.scrollLeft -= firstChild.offsetWidth;
+    }
+
+    if (slider.scrollLeft === 0) {
+        const newImage = imagesArray.pop();
+        imagesArray.unshift(newImage);
+        const li = document.createElement('li');
+        const img = document.createElement('img');
+        img.src = newImage.src;
+        img.alt = newImage.alt;
+        li.appendChild(img);
+        slider.prepend(li);
+        slider.removeChild(lastChild);
+        slider.scrollLeft += li.offsetWidth;
+    }
+}
+
+populateSlider();
+
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -27,6 +81,7 @@ slider.addEventListener('mousemove', (e) => {
     const x = e.pageX - slider.offsetLeft;
     const walk = (x - startX) * 1.5;
     slider.scrollLeft = scrollLeft - walk;
+    updateSlider();
 });
 
 slider.addEventListener('touchstart', (e) => {
@@ -46,25 +101,21 @@ slider.addEventListener('touchmove', (e) => {
     const x = e.touches[0].pageX - slider.offsetLeft;
     const walk = (x - startX) * 1.5;
     slider.scrollLeft = scrollLeft - walk;
+    updateSlider();
 });
 
 function autoScrollGallery() {
-    const slider = document.querySelector('.gallery');
-    let scrollAmount = 0;
-    const scrollStep = 1;
+    const scrollStep = -1;
     const scrollInterval = 20;
 
     function scroll() {
-        if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
-            slider.scrollLeft = 0;
-            scrollAmount = 0;
-        } else {
-            slider.scrollLeft += scrollStep;
-            scrollAmount += scrollStep;
-        }
+        slider.scrollLeft += scrollStep;
+        updateSlider();
     }
 
     setInterval(scroll, scrollInterval);
 }
 
-document.addEventListener('DOMContentLoaded', autoScrollGallery);
+document.addEventListener('DOMContentLoaded', () => {
+    autoScrollGallery();
+});
