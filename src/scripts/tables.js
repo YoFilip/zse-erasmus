@@ -15,6 +15,7 @@ function createCell(content, isLink = false) {
     const link = document.createElement("a");
     link.href = content;
     link.textContent = "Zobacz więcej";
+    link.style.color = "#333";
     link.target = "_blank";
     cell.appendChild(link);
   } else {
