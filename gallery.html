@@ -14,13 +14,41 @@
 
 <body>
   <header id="header-gallery">
-    <nav id="navbar-gallery">
-      <a href="index.html" id="logo" style="color: #333;">Erasmus+</a>
-      <ul>
-        <li><a href="./index.html" style="color: #333;">Strona główna</a></li>
-        <li><a href="./progress.html" style="color: #333;">Postępy Projektu</a></li>
-      </ul>
+    <nav id="navbar">
+      <a href="#" id="logo">Erasmus+</a>
+    
+      <div id="hamburger" class="hamburger">
+        <!-- Ikona hamburgera -->
+        <svg id="icon-bars" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+          <path fill="#ffffff" d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"></path>
+        </svg>
+        <!-- Ikona X -->
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="30" height="30" style="display: none;">
+          <path fill="#ffffff" d="M13.4,12l6.3-6.3c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0
+          c-0.4,0.4-0.4,1,0,1.4l6.3,6.3l-6.3,6.3C4.1,18.5,4,18.7,4,19c0,0.6,0.4,1,1,1c0.3,0,0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3
+          c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L13.4,12z"></path>
+        </svg>
+      </div>
     </nav>
+    
+    <!-- Menu rozwijane -->
+    <div id="mobile-menu" class="hidden">
+      <ul>
+        <li><a href="#">Strona główna</a></li>
+        <li><a href="#">O nas</a></li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.querySelector('#navbar ul');
+    
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+      });
+    </script>
   </header>
   <main>
     <h3 class="project-title" style="text-align: center;margin-top:5rem; margin-left:0.5rem; margin-right:0.5rem;">

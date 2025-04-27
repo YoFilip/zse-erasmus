@@ -21,6 +21,13 @@ body {
   font-style: normal;
 }
 
+#hamburger {
+  display: none;
+  cursor: pointer;
+  margin-right: 10rem;
+}
+
+
 #navbar,
 #navbar-progress,
 #navbar-gallery {
@@ -485,9 +492,43 @@ footer {
 
 @media screen and (max-width: 767px) {
   /* Responsive styles for smaller screens (phones) Index.html*/
-  #navbar {
+  #hamburger {
+    display: block;
+    margin-right: 3rem;
+  }
+
+  #logo{
+    margin-left: 3rem;
+  }
+
+
+  #navbar ul,
+  #navbar-gallery ul,
+  #navbar-progress ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    padding: 20px;
     display: none;
   }
+
+  #navbar li,
+  #navbar-gallery li,
+  #navbar-progress li {
+    margin-bottom: 10px;
+  }
+
+  #navbar ul.show,
+  #navbar-gallery ul.show,
+  #navbar-progress ul.show {
+    display: flex;
+  }
+
+
   #fullscreen-image {
     min-height: 20rem;
   }
@@ -603,12 +644,36 @@ footer {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* Responsive styles for smaller screens (tablets) Index.html*/
-  #navbar {
-    padding: 2rem 0rem;
+  #hamburger {
+    display: block;
   }
-  #navbar ul {
-    margin-right: 2rem;
+
+  #navbar ul,
+  #navbar-gallery ul,
+  #navbar-progress ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    padding: 20px;
+    display: none; /* Ukryte na start */
   }
+
+  #navbar li,
+  #navbar-gallery li,
+  #navbar-progress li {
+    margin-bottom: 10px;
+  }
+
+  #navbar ul.show,
+  #navbar-gallery ul.show,
+  #navbar-progress ul.show {
+    display: flex;
+  }
+
   #logo,
   #logo-progress {
     margin-left: 2rem;
