@@ -27,7 +27,6 @@ body {
   margin-right: 10rem;
 }
 
-
 #navbar,
 #navbar-progress,
 #navbar-gallery {
@@ -344,7 +343,6 @@ th {
   text-align: left;
   font-size: 1.7rem;
   margin-bottom: 2rem;
-
 }
 
 .expectations-wrapper {
@@ -489,18 +487,25 @@ footer {
   font-size: 0.9rem;
   font-weight: 400;
 }
-
+.footer-informacja {
+  max-width: 65%;
+}
+.footer-numer {
+  max-width: 35%;
+}
 @media screen and (max-width: 767px) {
   /* Responsive styles for smaller screens (phones) Index.html*/
   #hamburger {
     display: block;
     margin-right: 3rem;
   }
-
-  #logo{
+  .footer-informacja,
+  .footer-numer {
+    max-width: 100%;
+  }
+  #logo {
     margin-left: 3rem;
   }
-
 
   #navbar ul,
   #navbar-gallery ul,
@@ -527,7 +532,6 @@ footer {
   #navbar-progress ul.show {
     display: flex;
   }
-
 
   #fullscreen-image {
     min-height: 20rem;
@@ -647,7 +651,10 @@ footer {
   #hamburger {
     display: block;
   }
-
+  .footer-informacja,
+  .footer-numer {
+    max-width: 100%;
+  }
   #navbar ul,
   #navbar-gallery ul,
   #navbar-progress ul {
@@ -803,8 +810,8 @@ footer {
     overflow-x: auto;
   }
 
-   /* Responsive styles for smaller screens (tablets) gallery.html */
-   #navbar-gallery {
+  /* Responsive styles for smaller screens (tablets) gallery.html */
+  #navbar-gallery {
     padding: 2rem 0rem;
   }
 
