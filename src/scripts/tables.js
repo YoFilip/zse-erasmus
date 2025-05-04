@@ -37,6 +37,10 @@ function generateTable(containerId, data, columns = 5) {
         if (person) {
           const content = person.isStudent
             ? `${person.name} ${person.surname}`
+            : person.surname === "Panuszewska"
+            ? `${person.name} ${person.surname} (Koordynator Projektu)`
+            : person.surname === "Załucki"
+            ? `${person.name} ${person.surname} (Opiekun)`
             : `${person.name} ${person.surname} (Opiekun)`;
           row.appendChild(createCell(content));
         } else {
