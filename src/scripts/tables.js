@@ -24,27 +24,56 @@ function createCell(content, isLink = false) {
   return cell;
 }
 
-function generateTable(containerId, data, columns = 5) {
+function generateTable(containerId, data, columns = 3) {
   const container = document.querySelector(containerId);
   const table = containerId.includes("progress") ? container.querySelector("tbody") : document.createElement("table");
 
   if (!containerId.includes("progress")) {
-    for (let i = 0; i < data.length; i += columns) {
+    let isFirstRow = true;
+
+    for (let i = 0; i < data.length; ) {
       const row = document.createElement("tr");
 
-      for (let j = 0; j < columns; j++) {
-        const person = data[i + j];
-        if (person) {
-          const content = person.isStudent
-            ? `${person.name} ${person.surname}`
-            : person.surname === "Panuszewska"
-            ? `${person.name} ${person.surname} (Koordynator Projektu)`
-            : person.surname === "Załucki"
-            ? `${person.name} ${person.surname} (Opiekun)`
-            : `${person.name} ${person.surname} (Opiekun)`;
-          row.appendChild(createCell(content));
-        } else {
-          row.appendChild(createCell("—————————"));
+      if (isFirstRow) {
+        const person1 = data[i];
+        const person2 = data[i + 1];
+
+        if (person1 && person2) {
+          const content1 = person1.isStudent
+            ? `${person1.name} ${person1.surname}`
+            : person1.surname === "Panuszewska"
+            ? `${person1.name} ${person1.surname} (Koordynator Projektu)`
+            : `${person1.name} ${person1.surname} (Opiekun)`;
+
+          const content2 = person2.isStudent
+            ? `${person2.name} ${person2.surname}`
+            : person2.surname === "Załucki"
+            ? `${person2.name} ${person2.surname} (Opiekun)`
+            : `${person2.name} ${person2.surname} (Opiekun)`;
+
+          const cell = createCell(`${content1} |  ${content2}`);
+          cell.colSpan = columns; 
+          row.appendChild(cell);
+          i += 2;
+        }
+
+        isFirstRow = false;
+      } else {
+        for (let j = 0; j < columns; j++) {
+          const person = data[i];
+          if (person) {
+            const content = person.isStudent
+              ? `${person.name} ${person.surname}`
+              : person.surname === "Panuszewska"
+              ? `${person.name} ${person.surname} (Koordynator Projektu)`
+              : person.surname === "Załucki"
+              ? `${person.name} ${person.surname} (Opiekun)`
+              : `${person.name} ${person.surname} (Opiekun)`;
+            row.appendChild(createCell(content));
+            i++;
+          } else {
+            row.appendChild(createCell("—————————"));
+          }
         }
       }
 
