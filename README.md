@@ -1,57 +1,57 @@
-# ZSEII Erasmus+
+# ZSEII Erasmus+ 2025
 
-## Opis projektu
+## Project Description
 
-Projekt **Erasmus+ 2025** realizowany przez uczniów Zespołu Szkół Elektronicznych i Informatycznych w Sosnowcu to wyjątkowa inicjatywa, która umożliwia rozwój kompetencji zawodowych i osobistych. Dzięki współpracy z hiszpańskimi przedsiębiorstwami, uczniowie mają szansę zdobyć cenne doświadczenie zawodowe, rozwinąć umiejętności językowe oraz poznać różnorodność kulturową Europy.
+The **Erasmus+ 2025** project, organized by the students of the Zespół Szkół Elektronicznych i Informatycznych in Sosnowiec, is a unique initiative aimed at fostering professional and personal development. Through collaboration with Spanish companies, students have the opportunity to gain valuable work experience, improve their language skills, and explore the cultural diversity of Europe.
 
-### Cele projektu:
-- Zdobycie praktycznych umiejętności zawodowych.
-- Rozwój kompetencji językowych i społecznych.
-- Przygotowanie do przyszłej kariery zawodowej na rynku międzynarodowym.
-- Poznanie kultury i specyfiki pracy w Hiszpanii.
+### Project Goals:
+- Acquire practical professional skills.
+- Prepare for future careers in the international job market.
 
-### Szczegóły projektu:
-- **Numer projektu:** 2024-1-PL01-KA121-VET-000204518  
-- **Akcja:** Kształcenie i Szkolenia Zawodowe (KA120-VET)  
-- **Lokalizacja:** Alicante, Hiszpania  
-- **Uczestnicy:** 27 uczniów klas IV z Zespołu Szkół Elektronicznych i Informatycznych w Sosnowcu  
+### Project Details:
+- **Project Number:** 2024-1-PL01-KA121-VET-000204518  
+- **Action:** Vocational Education and Training (KA120-VET)  
+- **Location:** Alicante, Spain  
+- **Participants:** 27 students from the 4th grade of ZSEII in Sosnowiec  
 
-## Struktura projektu
+## Project Structure
 
-Projekt składa się z kilku kluczowych sekcji, które można znaleźć na stronie internetowej:
+The project consists of several key sections available on the website:
 
-1. **Strona główna**  
-   Zawiera ogólne informacje o projekcie oraz zaproszenie do śledzenia przygotowań i sukcesów uczestników.
+1. **Home Page**  
+   General information about the project and an invitation to follow the participants' preparations and achievements.
 
-2. **Postępy projektu**  
-   Sekcja przedstawiająca działania realizowane w ramach projektu, takie jak rekrutacja, testy językowe czy przygotowania kulturowe.
+2. **Project Progress**  
+   A section showcasing activities such as recruitment, language tests, and cultural preparations.
 
-3. **Galeria zdjęć**  
-   Miejsce, gdzie można zobaczyć zdjęcia dokumentujące najważniejsze momenty projektu.
+3. **Photo Gallery**  
+   A collection of photos documenting the most important moments of the project.
 
-4. **Oczekiwania uczestników**  
-   Opinie i cele uczestników dotyczące udziału w projekcie Erasmus+.
+4. **Participants' Expectations**  
+   Insights and goals shared by the participants regarding their involvement in the Erasmus+ program.
 
-## Technologie użyte w projekcie
+## Technologies Used
 
-- **HTML5** – struktura strony.
-- **CSS3** – stylizacja i responsywność.
-- **JavaScript** – dynamiczne funkcjonalności, takie jak generowanie tabel, obsługa galerii czy menu nawigacyjne.
-- **JSON** – przechowywanie danych o uczestnikach i działaniach projektu.
+- **HTML5** – Structure of the website.
+- **CSS3** – Styling and responsiveness.
+- **JavaScript** – Dynamic functionalities like table generation, gallery handling, and navigation menus.
+- **JSON** – Data storage for participants and project activities.
 
-## Autorzy
+## Authors
 
-Projekt został przygotowany przez uczniów Zespołu Szkół Elektronicznych i Informatycznych w Sosnowcu:
+This project was developed by the students of ZSEII in Sosnowiec:
 
 - Filip Świątek  
 - Dawid Ślusarczyk  
 - Jakub Półchłopek  
 - Mateusz Muszyński  
 
-## Licencja
+## License
 
-Projekt jest udostępniony na zasadach licencji **MIT License**. Szczegóły licencji znajdują się w pliku [LICENSE](LICENSE).
+This project is licensed under the **MIT License**. For more details, refer to the [LICENSE](LICENSE) file.
 
-## Współfinansowanie
+Materials on the website are shared under the **Creative Commons License**.
 
-Projekt jest współfinansowany przez Unię Europejską w ramach programu Erasmus+. Wyrażone poglądy i opinie są wyłącznie poglądami autorów i niekoniecznie odzwierciedlają stanowisko Unii Europejskiej lub Fundacji Rozwoju Systemu Edukacji (FRSE).
+## Funding
+
+The project is co-funded by the European Union under the Erasmus+ program. The views and opinions expressed are solely those of the authors and do not necessarily reflect the position of the European Union or the Foundation for the Development of the Education System (FRSE).
