@@ -18,13 +18,17 @@
       <a href="index.html" id="logo">Erasmus+</a>
       
       <div id="hamburger">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="bars" width="30" height="30">
+        <svg id="icon-bars" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
           <path fill="#ffffff" d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"></path>
+        </svg>
+
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" style="display: none;">
+          <path fill="#ffffff" d="M13.4,12l6.3-6.3c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l6.3,6.3l-6.3,6.3C4.1,18.5,4,18.7,4,19c0,0.6,0.4,1,1,1c0.3,0,0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L13.4,12z"/>
         </svg>
       </div>
     
       <ul>
-        <li><a href="./index.html">Strona główna</a></li>
+        <li><a href="./index.html" class="test1">Strona główna</a></li>
         <li><a href="./progress.html">Postępy Projektu</a></li>
         <li><a href="./gallery.html">Galeria zdjęć</a></li>
       </ul>
@@ -33,11 +37,19 @@
     <script>
       const hamburger = document.getElementById('hamburger');
       const navMenu = document.querySelector('#navbar ul');
+      const iconBars = document.getElementById('icon-bars');
+      const iconClose = document.getElementById('icon-close');
     
       hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('show');
+        const isOpen = navMenu.classList.toggle('show');
+    
+        iconBars.style.display = isOpen ? 'none' : 'block';
+        iconClose.style.display = isOpen ? 'block' : 'none';
+    
+        document.body.classList.toggle('no-scroll', isOpen);
       });
     </script>
+
     <div id="fullscreen-content">
       <h1 id="fullscreen-title">
         Zobacz, co przeżyliśmy na wyjeździe Erasmus+
