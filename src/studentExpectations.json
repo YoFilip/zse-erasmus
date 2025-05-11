@@ -12,10 +12,6 @@
     "title": "W trakcie stażu chciałbym zdobyć wiele nowych umiejętności, które będą przydatne w mojej przyszłej karierze zawodowej, a także miło spędzić czas z rówieśnikami w malowniczym Alicante."
   },
   {
-    "name": "Adam Solipiwko",
-    "title": "Doświadczyć nowej kultury. Spędzić dobrze czas, ucząc się czegoś nowego w innym środowisku."
-  },
-  {
     "name": "Hubert Lech",
     "title": "Mam nadzieję, że udział w tym stażu pozwoli mi nie tylko rozwinąć kompetencje zawodowe w zakresie programowania, ale także doświadczyć pracy w międzynarodowym zespole, gdzie odmienności kulturowe mogą być podstawą rozwijającej współpracy. Liczę na to, że czas spędzony w Alicante będzie czasem odpowiednio zagospodarowanym - stanie się źródłem inspiracji oraz wiedzy nie tylko powiązanej z tematyką szkoleń, ale również poznawaniem nowej kultury, języka i ludzi, co będzie równie cenne jak zdobyte kompetencje techniczne."
   },
@@ -24,7 +20,15 @@
     "title": "Jako technik programista liczę, że staż zawodowy w Alicante pozwoli mi zdobyć nowe umiejętności w zakresie mojego zawodu oraz zainteresowań. Mam nadzieję na poznanie nie tylko zagranicznego rynku pracy i współpracy w języku obcym ale również kultury całego kraju i specyfiki życia w nim. Jestem pewny, że projekt ten pozwoli mi na rozwój osobisty na wielu płaszczyznach oraz zmotywuje mnie do brania udziału w kolejnych takich inicjatywach."
   },
   {
+    "name": "Mateusz Czernecki",
+    "title": "Staż zawodowy w Hiszpanii pozwala mi na poznanie zagranicznego środowiska pracy. Wyjazd do Alicante daje mi szanse rozwoju moich umiejętności językowych oraz zawodowych, także daje mi możliwość poznać kulturę kraju. Ważne dla mnie podczas stażu będzie nauczyć się jak najwięcej praktycznej pracy w zakładzie pracy, mozliwość obsługi nowczesnych maszyn oraz doskonalenie aktualnych umiejętności."
+  },
+  {
     "name": "Piotr Knaś",
     "title": "Wyjazd na zagraniczne praktyki to dla mnie ogromna szansa, by rozwinąć się zarówno zawodowo, jak i osobiście – chcę zdobyć nowe doświadczenia, lepiej poznać siebie i nauczyć się funkcjonować w innym środowisku. Liczę też na to, że poprawię swój język obcy (angielski) oraz poznam podstawy języka hiszpańskiego i hiszpańskiej kultury."
+  },
+  {
+    "name": "Adam Solipiwko",
+    "title": "Doświadczyć nowej kultury. Spędzić dobrze czas, ucząc się czegoś nowego w innym środowisku."
   }
 ]
