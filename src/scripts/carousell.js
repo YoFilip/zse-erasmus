@@ -1,12 +1,15 @@
 const slider = document.querySelector('.infinite-gallery');
 
 const imagesArray = [
-    { src: 'assets/hero_image.jpg', alt: 'Widok Alicante 1' },
-    { src: 'assets/hero_image.jpg', alt: 'Widok Alicante 2' },
-    { src: 'assets/hero_image.jpg', alt: 'Widok Alicante 3' },
-    { src: 'assets/hero_image.jpg', alt: 'Widok Alicante 4' },
-    { src: 'assets/hero_image.jpg', alt: 'Widok Alicante 5' },
-    { src: 'assets/hero_image.jpg', alt: 'Widok Alicante 6' }
+    { src: 'assets/gallery/image1.jpg', alt: 'Test z języka angielskiego' },
+    { src: 'assets/gallery/image2.jpg', alt: 'Test z języka angielskiego' },
+    { src: 'assets/gallery/image3.jpg', alt: 'Spotkanie informacyjne dla klas IV' },
+    { src: 'assets/gallery/image4.jpg', alt: 'Spotkanie online z firmą przyjmującą z Alicante – przygotowanie kulturowe' },
+    { src: 'assets/gallery/image1.jpg', alt: 'Test z języka angielskiego' },
+    { src: 'assets/gallery/image2.jpg', alt: 'Test z języka angielskiego' },
+    { src: 'assets/gallery/image3.jpg', alt: 'Spotkanie informacyjne dla klas IV' },
+    { src: 'assets/gallery/image4.jpg', alt: 'Spotkanie online z firmą przyjmującą z Alicante – przygotowanie kulturowe' },
+
 ];
 
 function populateSlider() {

@@ -282,7 +282,7 @@ th {
 
 .image-grid {
   padding: 5px;
-  margin: 3rem 0 3rem 0;
+  margin-bottom: 10rem;
 }
 
 .image-row {
@@ -300,25 +300,20 @@ th {
   background-position: center center;
 }
 
-.image-01,
-.image-03,
-.image-05,
-.image-07,
-.image-09,
-.image-11 {
-  background-image: url("../assets/hero_image.jpg");
+.image-01{
+  background-image: url("../assets/gallery/image1.jpg");
+  flex: 1;
+}
+.image-03{
+  background-image: url("../assets/gallery/image3.jpg");
   flex: 1;
 }
 
-.image-02,
-.image-04,
-.image-06,
-.image-08,
-.image-10,
-.image-12 {
-  background-image: url("../assets/hero_progress_image.jpg");
+.image-02 {
+  background-image: url("../assets/gallery/image2.jpg");
   flex: 1;
 }
+
 
 @media screen and (max-width: 400px) {
   .image-row {
@@ -893,8 +888,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
+
   }
 
   .image-placeholder {

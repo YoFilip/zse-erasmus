@@ -33,22 +33,6 @@
         <li><a href="./gallery.html">Galeria zdjęć</a></li>
       </ul>
     </nav>
-
-    <script>
-      const hamburger = document.getElementById('hamburger');
-      const navMenu = document.querySelector('#navbar ul');
-      const iconBars = document.getElementById('icon-bars');
-      const iconClose = document.getElementById('icon-close');
-    
-      hamburger.addEventListener('click', () => {
-        const isOpen = navMenu.classList.toggle('show');
-    
-        iconBars.style.display = isOpen ? 'none' : 'block';
-        iconClose.style.display = isOpen ? 'block' : 'none';
-    
-        document.body.classList.toggle('no-scroll', isOpen);
-      });
-    </script>
     <div id="fullscreen-content">
       <h1 id="fullscreen-title">
         Postępy naszego projektu Erasmus+
@@ -113,6 +97,7 @@
   </footer>
 
   <script type="module" src="src/scripts/tables.js"></script>
+  <script src="src/scripts/hamburger.js"></script>
 </body>
 
 </html>
