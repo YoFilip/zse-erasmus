@@ -1,27 +1,26 @@
 [
-    {
-      "name": "Adam Solipiwko", 
-      "title": "Doświadczyć nowej kultury. Spędzić dobrze czas, ucząc się czegoś nowego w innym środowisku."
-    },
-    {
-      "name": "Mateusz Muszyński",
-      "title": "W trakcie stażu chciałbym zdobyć wiele nowych umiejętności, które będą przydatne w mojej przyszłej karierze zawodowej, a także miło spędzić czas z rówieśnikami w malowniczym Alicante."
-    },
-    {
-      "name": "Szymon Skrzypek",
-      "title": "Mam nadzieję na poprawę znajomości języka angielskiego oraz poznanie nowych kultur i tradycji."
-    },
-    {
-      "name": "Mateusz Czernecki",
-      "title": "Chciałbym zdobyć praktyczne doświadczenie zawodowe oraz nauczyć się pracy w zespole międzynarodowym."
-    },
-    {
-      "name": "Konrad Zadworny",
-      "title": "Oczekuję zdobycia nowych umiejętności, które pomogą mi w przyszłej karierze zawodowej."
-    },
-    {
-      "name": "Patryk Stateczny",
-      "title": "Chcę sprawdzić swoje umiejętności w nowym środowisku i nauczyć się radzenia sobie w trudnych sytuacjach. Udział w projekcie to dla mnie okazja do rozwoju osobistego i zawodowego."
-    }
-    
+  {
+    "name": "Mateusz Skutnik",
+    "title": "Biorę udział w projekcie Erasmus, aby poszerzyć wiedzę i zdobyć praktyczne doświadczenie jako informatyk w międzynarodowym środowisku. Wyjazd do Alicante to dla mnie szansa na rozwój zawodowy i osobisty – chcę doskonalić umiejętności techniczne, językowe oraz poznać kulturę pracy za granicą. Liczę, że udział w stażu pozwoli mi lepiej przygotować się do przyszłej kariery i zmotywuje innych do udziału w podobnych projektach."
+  },
+  {
+    "name": "Filip Świątek",
+    "title": "Chciałbym zwiedzić słoneczną Hiszpanię i przy okazji zdobyć nowe doświadczenie zawodowe, które na pewno przyda mi się w obecnej pracy. Liczę również na poznanie tamtejszej kultury i sposobu pracy za granicą, co pomoże mi się rozwijać zarówno zawodowo, jak i osobiście."
+  },
+  {
+    "name": "Mateusz Muszyński",
+    "title": "W trakcie stażu chciałbym zdobyć wiele nowych umiejętności, które będą przydatne w mojej przyszłej karierze zawodowej, a także miło spędzić czas z rówieśnikami w malowniczym Alicante."
+  },
+  {
+    "name": "Adam Solipiwko",
+    "title": "Doświadczyć nowej kultury. Spędzić dobrze czas, ucząc się czegoś nowego w innym środowisku."
+  },
+  {
+    "name": "Konrad Zadworny",
+    "title": "Oczekuję zdobycia nowych umiejętności, które pomogą mi w przyszłej karierze zawodowej."
+  },
+  {
+    "name": "Patryk Stateczny",
+    "title": "Chcę sprawdzić swoje umiejętności w nowym środowisku i nauczyć się radzenia sobie w trudnych sytuacjach. Udział w projekcie to dla mnie okazja do rozwoju osobistego i zawodowego."
+  }
 ]
