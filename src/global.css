@@ -318,10 +318,13 @@ th {
 
 
 @media screen and (max-width: 400px) {
+  
   .image-row {
     flex-direction: column;
   }
-
+  .image .image-01,.image-02,.image-03 {
+    flex: 0;
+  }
   .image-row .image {
     flex-basis: auto;
   }
@@ -496,7 +499,15 @@ footer {
 }
 @media screen and (max-width: 767px) {
   /* Responsive styles for smaller screens (phones) Index.html*/
-
+  .image-row {
+    flex-direction: column;
+  }
+  .image .image-01,.image-02,.image-03 {
+    flex: 0;
+  }
+  .image-row .image {
+    flex-basis: auto;
+  }
   #navbar {
     background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
@@ -511,7 +522,7 @@ footer {
 
   #logo {
     margin-left: 3rem;
-    color: white;
+    color: white !important;
     z-index: 1100;
   }
 
@@ -532,9 +543,6 @@ footer {
     cursor: pointer;
     z-index: 1100;
   }
-
-
-
   #navbar ul {
     display: none;
     position: fixed;
@@ -563,10 +571,6 @@ footer {
   #navbar li {
     margin: 1rem 0;
   }
-
-
-
-
   .footer-informacja,
   .footer-numer {
     max-width: 100%;
@@ -679,10 +683,12 @@ footer {
     overflow-x: auto;
   }
 
-  /* Responsive styles for smaller screens (phones) gallery.html*/
   #navbar-gallery {
     display: none;
   }
+  
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -712,7 +718,7 @@ footer {
 
   #logo {
     margin-left: 3rem;
-    color: white;
+    color: white !important;
     z-index: 1100;
   }
 
@@ -831,8 +837,6 @@ footer {
     align-items: center;
     margin-bottom: 2rem;
   }
-
-  /* Responsive styles for smaller screens (tablets) progress.html */
   #navbar-progress {
     padding: 2rem 0rem;
   }
@@ -873,8 +877,6 @@ footer {
     font-size: 0.9rem;
     overflow-x: auto;
   }
-
-  /* Responsive styles for smaller screens (tablets) gallery.html */
   #navbar-gallery {
     padding: 2rem 0rem;
   }
@@ -895,17 +897,5 @@ footer {
 
   .project-title {
     font-size: 1.5rem;
-  }
-
-  .image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-  }
-
-  .image-placeholder {
-    margin: 4rem 1rem;
-    text-align: center;
   }
 }
