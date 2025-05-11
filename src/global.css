@@ -27,6 +27,8 @@ body {
   margin-right: 10rem;
 }
 
+
+
 #navbar,
 #navbar-progress,
 #navbar-gallery {
@@ -512,9 +514,22 @@ footer {
     padding: 1rem;
   }
 
+  #logo {
+    margin-left: 3rem;
+    color: white;
+    z-index: 1100;
+  }
+
   #navbar a{
     font-size: 2rem;
+    color: rgb(150, 150, 150);
   }
+
+  #navbar a:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+  }
+
 
   #hamburger {
     display: block;
@@ -523,11 +538,7 @@ footer {
     z-index: 1100;
   }
 
-  #logo {
-    margin-left: 3rem;
-    color: white;
-    z-index: 1100;
-  }
+
 
   #navbar ul {
     display: none;
@@ -557,6 +568,8 @@ footer {
   #navbar li {
     margin: 1rem 0;
   }
+
+
 
 
   .footer-informacja,
