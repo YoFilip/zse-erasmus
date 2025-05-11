@@ -351,12 +351,12 @@ th {
 }
 
 .expectations-name {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .expectations-quote {
   margin-left: -0.1rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.6;
   color: var(--primary-text-color);
   margin-bottom: 1.5rem;
