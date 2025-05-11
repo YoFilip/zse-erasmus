@@ -251,7 +251,7 @@ body {
 .project-title,
 #box-title {
   text-align: left;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--primary-text-color);
 }
@@ -314,20 +314,6 @@ th {
 .image-02 {
   background-image: url("../assets/gallery/image2.jpg");
   flex: 1;
-}
-
-
-@media screen and (max-width: 400px) {
-  
-  .image-row {
-    flex-direction: column;
-  }
-  .image .image-01,.image-02,.image-03 {
-    flex: 0;
-  }
-  .image-row .image {
-    flex-basis: auto;
-  }
 }
 
 #expectations-container {
@@ -497,8 +483,9 @@ footer {
   overflow: hidden;
   height: 100vh;
 }
+
+/* Telefon */
 @media screen and (max-width: 767px) {
-  /* Responsive styles for smaller screens (phones) Index.html*/
   .image-row {
     flex-direction: column;
   }
@@ -527,8 +514,8 @@ footer {
   }
 
   #navbar a{
-    font-size: 2rem;
-    color: rgb(150, 150, 150);
+    font-size: 1.5rem;
+    color: white !important;
   }
 
   #navbar a:hover{
@@ -599,11 +586,23 @@ footer {
     margin: 0.5rem;
   }
   #about-us-text {
+    font-size: 1rem;
     text-align: left;
   }
   #about-us-title {
     font-size: 1.5rem;
     text-align: left;
+  }
+  #box-title {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  #box-text {
+    font-size: 1rem;
+    text-align: left;
+  }
+  #project-text{
+    font-size: 1rem;
   }
   #project-description {
     margin: 0.5rem;
@@ -622,6 +621,10 @@ footer {
   }
   .box-button.left {
     margin: 1rem 0 0 0;
+  }
+  .section-header{
+    font-size: 1.5rem;
+    text-align: left;
   }
   #info-box img {
     max-width: 100%;
@@ -655,7 +658,6 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-  /* Responsive styles for smaller screens (phones) progress.html*/
   #navbar-progress {
     display: none;
   }
@@ -686,13 +688,12 @@ footer {
   #navbar-gallery {
     display: none;
   }
-  
-
-
 }
 
+
+/* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Responsive styles for smaller screens (tablets) Index.html*/
+
   #navbar {
     background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
@@ -706,7 +707,8 @@ footer {
   }
 
   #navbar a{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: white !important;
   }
 
   #hamburger {
@@ -808,6 +810,10 @@ footer {
   .box-button {
     margin: 10px 0;
   }
+  #box-text {
+    font-size: 1rem;
+    text-align: left;
+  }
 
   #expectations-container {
     margin: 3rem 1rem;
@@ -816,7 +822,10 @@ footer {
   footer {
     padding: 10px;
   }
-
+ .footer-authors,
+  .footer-links {
+    text-align: center;
+  }
   .footer-top {
     flex-direction: column;
     align-items: center;
@@ -827,10 +836,11 @@ footer {
     text-align: center;
   }
   .footer-bottom {
-    flex-direction: column;
+
     text-align: center;
     padding: 10px;
   }
+
 
   .footer-partners {
     flex-direction: row;
@@ -864,11 +874,6 @@ footer {
     margin-top: 5rem;
     min-height: 30vh;
   }
-
-  #project-title {
-    font-size: 1rem;
-  }
-
   #project-text {
     font-size: 1rem;
   }
@@ -897,5 +902,20 @@ footer {
 
   .project-title {
     font-size: 1.5rem;
+  }
+}
+
+
+/* Galeria */
+@media screen and (max-width: 400px) {
+  
+  .image-row {
+    flex-direction: column;
+  }
+  .image .image-01,.image-02,.image-03 {
+    flex: 0;
+  }
+  .image-row .image {
+    flex-basis: auto;
   }
 }
