@@ -1,15 +1,26 @@
 const slider = document.querySelector('.infinite-gallery');
 
 const imagesArray = [
-    { src: 'assets/gallery/image1.jpg', alt: 'Test z języka angielskiego' },
-    { src: 'assets/gallery/image2.jpg', alt: 'Test z języka angielskiego' },
-    { src: 'assets/gallery/image3.jpg', alt: 'Spotkanie informacyjne dla klas IV' },
-    { src: 'assets/gallery/image4.jpg', alt: 'Spotkanie online z firmą przyjmującą z Alicante – przygotowanie kulturowe' },
-    { src: 'assets/gallery/image1.jpg', alt: 'Test z języka angielskiego' },
-    { src: 'assets/gallery/image2.jpg', alt: 'Test z języka angielskiego' },
-    { src: 'assets/gallery/image3.jpg', alt: 'Spotkanie informacyjne dla klas IV' },
-    { src: 'assets/gallery/image4.jpg', alt: 'Spotkanie online z firmą przyjmującą z Alicante – przygotowanie kulturowe' },
-
+    { src: 'assets/19_05/image30.JPEG', alt: 'image' },
+    { src: 'assets/19_05/image6.JPEG', alt: 'image' },
+    { src: 'assets/19_05/image35.JPEG', alt: 'image' },
+    { src: 'assets/19_05/image32.JPEG', alt: 'image' },
+    { src: 'assets/19_05/image4.JPEG', alt: 'image' },
+    { src: 'assets/19_05/image5.JPEG', alt: 'image' },
+    { src: 'assets/19_05/image7.JPEG', alt: 'image' },
+    { src: 'assets/20_05/image6.JPEG', alt: 'image' },
+    { src: 'assets/20_05/image9.JPEG', alt: 'image' },
+    { src: 'assets/20_05/image10.JPEG', alt: 'image' },
+    { src: 'assets/22_05/image11.JPEG', alt: 'image' },
+    { src: 'assets/22_05/image8.JPEG', alt: 'image' },
+    { src: 'assets/22_05/image6.JPEG', alt: 'image' },
+    { src: 'assets/22_05/image29.JPEG', alt: 'image' },
+    { src: 'assets/22_05/image27.JPEG', alt: 'image' },
+    { src: 'assets/22_05/image31.JPEG', alt: 'image' },
+    { src: 'assets/22_05/image37.JPEG', alt: 'image' },
+    { src: 'assets/22_05/image38.JPEG', alt: 'image' },
+    { src: 'assets/22_05/image42.jpg', alt: 'image' },
+    { src: 'assets/23_05/image30.JPEG', alt: 'image' },
 ];
 
 function populateSlider() {

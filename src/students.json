@@ -14,7 +14,7 @@
   { "name": "Mateusz", "surname": "Skutnik", "isStudent": true },
   { "name": "Artur", "surname": "Snela", "isStudent": true },
   { "name": "Adam", "surname": "Solipiwko", "isStudent": true },
-  { "name": "Patryk", "surname": "Suchożerbski", "isStudent": true },
+  { "name": "Patryk", "surname": "Suchożebrski", "isStudent": true },
   { "name": "Filip", "surname": "Świątek", "isStudent": true },
   { "name": "Kamil", "surname": "Zenderowski", "isStudent": true },
   { "name": "Jakub", "surname": "Budny", "isStudent": true },
