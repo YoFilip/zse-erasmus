@@ -1,103 +1,156 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSEII Erasmus + | Postępy Projektu</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="src/global.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZSEII Erasmus + | Postępy Projektu</title>
-  <link rel="icon" href="assets/favicon.png" type="image/png" />
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-  </style>
-  <link rel="stylesheet" href="src/global.css" />
-</head>
+  <body>
+    <header id="fullscreen-progress-image">
+      <nav id="navbar">
+        <a href="index.html" id="logo">Erasmus+</a>
 
-<body>
-  <header id="fullscreen-progress-image">
-    <nav id="navbar">
-      <a href="index.html" id="logo">Erasmus+</a>
-      
-      <div id="hamburger">
-        <svg id="icon-bars" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
-          <path fill="#ffffff" d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"></path>
-        </svg>
+        <div id="hamburger">
+          <svg
+            id="icon-bars"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="30"
+            height="30"
+          >
+            <path
+              fill="#ffffff"
+              d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"
+            ></path>
+          </svg>
 
-        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" style="display: none;">
-          <path fill="#ffffff" d="M13.4,12l6.3-6.3c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l6.3,6.3l-6.3,6.3C4.1,18.5,4,18.7,4,19c0,0.6,0.4,1,1,1c0.3,0,0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L13.4,12z"/>
-        </svg>
+          <svg
+            id="icon-close"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="30"
+            height="30"
+            style="display: none"
+          >
+            <path
+              fill="#ffffff"
+              d="M13.4,12l6.3-6.3c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l6.3,6.3l-6.3,6.3C4.1,18.5,4,18.7,4,19c0,0.6,0.4,1,1,1c0.3,0,0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L13.4,12z"
+            />
+          </svg>
+        </div>
+
+        <ul>
+          <li><a href="./index.html">Strona główna</a></li>
+          <li><a href="./progress.html">Postępy Projektu</a></li>
+          <li><a href="./gallery.html">Galeria zdjęć</a></li>
+        </ul>
+      </nav>
+      <div id="fullscreen-content">
+        <h1 id="fullscreen-title">Postępy naszego projektu Erasmus+</h1>
+        <p id="fullscreen-text">
+          Poznaj nasze przygotowania, działania i sukcesy zrealizowane podczas
+          Alicante w Hiszpanii.
+        </p>
       </div>
-    
-      <ul>
-        <li><a href="./index.html">Strona główna</a></li>
-        <li><a href="./progress.html">Postępy Projektu</a></li>
-        <li><a href="./gallery.html">Galeria zdjęć</a></li>
-      </ul>
-    </nav>
-    <div id="fullscreen-content">
-      <h1 id="fullscreen-title">
-        Postępy naszego projektu Erasmus+
-      </h1>
-      <p id="fullscreen-text">
-        Śledź nasze przygotowania, działania i sukcesy w ramach wyjazdu do Alicante w Hiszpanii.
-      </p>
-    </div>
-    <a href="#project-description" id="scroll-arrow">&#x2193;</a>
-  </header>
+      <a href="#project-description" id="scroll-arrow">&#x2193;</a>
+    </header>
 
-  <main>
-    <section id="project-description">
-      <h2 class="section-header">Tabela postępów projektu</h2>
-      <div id="progress-table" style="overflow-x:auto;">
-        <table>
-          <thead>
-            <tr>
-              <th>L.p.</th>
-              <th>Opis działania</th>
-              <th>Data</th>
-              <th>Link</th>
-            </tr>
-          </thead>
-          <tbody>
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
+    <main>
+      <section id="project-description">
+        <h2 class="section-header">Tabela postępów projektu</h2>
+        <div id="progress-table" style="overflow-x: auto">
+          <table>
+            <thead>
+              <tr>
+                <th>L.p.</th>
+                <th>Opis działania</th>
+                <th>Data</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
 
-  <footer>
-    <div class="footer-top">
-      <div class="footer-partners">
-        <img class="footer-logo" src="assets/elektronik.png" alt="Logo elektronika">
-        <img class="footer-logo" src="assets/logo_mobility.jpg" alt="Logo mobility">
-        <img class="footer-logo" src="assets/pionowe niebieski.png" alt="Logo pionowe niebieski">
+    <footer>
+      <div class="footer-top">
+        <div class="footer-partners">
+          <img
+            class="footer-logo"
+            src="assets/elektronik.png"
+            alt="Logo elektronika"
+          />
+          <img
+            class="footer-logo"
+            src="assets/logo_mobility.jpg"
+            alt="Logo mobility"
+          />
+          <img
+            class="footer-logo"
+            src="assets/pionowe niebieski.png"
+            alt="Logo pionowe niebieski"
+          />
+        </div>
+        <div class="footer-links">
+          <h3><b>Social Media</b></h3>
+          <h3>
+            <a
+              href="https://www.facebook.com/profile.php?id=100067838746263"
+              class="footer-link"
+              target="_blank"
+              >Facebook</a
+            >
+          </h3>
+          <h3>
+            <a
+              href="https://www.youtube.com/@ErasmusELEKTRONIK"
+              class="footer-link"
+              target="_blank"
+              >YouTube</a
+            >
+          </h3>
+          <h3>
+            <a href="https://zse.edu.pl/" class="footer-link" target="_blank"
+              >Strona</a
+            >
+          </h3>
+        </div>
+        <div class="footer-authors">
+          <h3><b>Autorzy</b></h3>
+          <h3 class="authors">Filip Świątek</h3>
+          <h3 class="authors">Dawid Ślusarczyk</h3>
+          <h3 class="authors">Jakub Półchłopek</h3>
+          <h3 class="authors">Mateusz Muszyński</h3>
+        </div>
       </div>
-      <div class="footer-links">
-        <h3><b>Social Media</b></h3>
-        <h3><a href="https://www.facebook.com/profile.php?id=100067838746263" class="footer-link" target="_blank">Facebook</a></h3>
-        <h3><a href="https://www.youtube.com/@ErasmusELEKTRONIK" class="footer-link" target="_blank">YouTube</a></h3>
-        <h3><a href="https://zse.edu.pl/" class="footer-link" target="_blank">Strona</a></h3>
+      <div class="footer-bottom">
+        <h5 class="footer-numer">
+          Projekt nr 2024-1-PL01-KA121-VET-000204518<br />
+          realizowany w ramach Akredytacji programu Erasmus+ akcja Kształcenie
+          <br />
+          Szkolenia zawodowego nr 2020-1-PL01-KA120-VET-095178 <br />
+        </h5>
+        <h5 class="footer-informacja">
+          Materiały na stronie udostępnione na zasadzie licencji Creative
+          Commons. <br />
+          Współfinansowane przez Unię Europejską. Wyrażone poglądy i opinie są
+          jednak poglądami i opiniami wyłącznie autora(-ów) i niekoniecznie
+          odzwierciedlają poglądy Unii Europejskiej lub Fundacji Rozwoju Systemu
+          Edukacji (FRSE). Ani Unia Europejska, ani FRSE nie mogą ponosić za nie
+          odpowiedzialności.
+        </h5>
       </div>
-      <div class="footer-authors">
-        <h3><b>Autorzy</b></h3>
-        <h3 class="authors">Filip Świątek</h3>
-        <h3 class="authors">Dawid Ślusarczyk</h3>
-        <h3 class="authors">Jakub Półchłopek</h3>
-        <h3 class="authors">Mateusz Muszyński</h3>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <h5 class="footer-numer">Projekt nr 2024-1-PL01-KA121-VET-000204518<br> realizowany w ramach Akredytacji programu
-        Erasmus+ akcja Kształcenie <br> Szkolenia zawodowego nr 2020-1-PL01-KA120-VET-095178 <br>
-      </h5>
-      <h5 class="footer-informacja">
-        Materiały na stronie udostępnione na zasadzie licencji Creative Commons. <br>
-        Współfinansowane przez Unię Europejską. Wyrażone poglądy i opinie są jednak poglądami i opiniami wyłącznie autora(-ów) i niekoniecznie odzwierciedlają poglądy Unii Europejskiej lub Fundacji Rozwoju Systemu Edukacji (FRSE). Ani Unia Europejska, ani FRSE nie mogą ponosić za nie odpowiedzialności.
-      </h5>
-    </div>
-  </footer>
+    </footer>
 
-  <script type="module" src="src/scripts/tables.js"></script>
-  <script src="src/scripts/hamburger.js"></script>
-</body>
-
+    <script type="module" src="src/scripts/tables.js"></script>
+    <script src="src/scripts/hamburger.js"></script>
+  </body>
 </html>

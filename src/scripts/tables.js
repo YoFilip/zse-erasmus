@@ -1,7 +1,7 @@
 async function fetchData(file) {
   const response = await fetch(file);
   if (!response.ok) {
-    console.error(`Failed to fetch ${file}:`, response.statusText); 
+    console.error(`Failed to fetch ${file}:`, response.statusText);
     throw new Error(`Failed to load ${file} data`);
   }
   const data = await response.json();
@@ -25,7 +25,9 @@ function createCell(content, isLink = false) {
 
 function generateTable(containerId, data, columns = 3) {
   const container = document.querySelector(containerId);
-  const table = containerId.includes("progress") ? container.querySelector("tbody") : document.createElement("table");
+  const table = containerId.includes("progress")
+    ? container.querySelector("tbody")
+    : document.createElement("table");
 
   if (!containerId.includes("progress")) {
     let isFirstRow = true;
@@ -51,7 +53,7 @@ function generateTable(containerId, data, columns = 3) {
             : `${person2.name} ${person2.surname} (Opiekun)`;
 
           const cell = createCell(`${content1} |  ${content2}`);
-          cell.colSpan = columns; 
+          cell.colSpan = columns;
           row.appendChild(cell);
           i += 2;
         }
@@ -95,17 +97,19 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     const studentsTableContainer = document.querySelector("#students-table");
     if (studentsTableContainer) {
-      const students = await fetchData('src/students.json');
+      const students = await fetchData("src/students.json");
       generateTable("#students-table", students, 3);
     }
 
-    const progressTableContainer = document.querySelector("#progress-table tbody");
+    const progressTableContainer = document.querySelector(
+      "#progress-table tbody"
+    );
     if (progressTableContainer) {
-      const actions = await fetchData('src/actions.json');
-      console.log('Actions data:', actions);
+      const actions = await fetchData("src/actions.json");
+      console.log("Actions data:", actions);
       generateTable("#progress-table", actions);
     }
   } catch (error) {
-    console.error('Error loading data:', error);
+    console.error("Error loading data:", error);
   }
 });

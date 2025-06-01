@@ -83,7 +83,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url("../assets/hero_image.jpg") no-repeat center center/cover;
+  background: url("../assets/30_05/image15.jpg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,8 +93,7 @@ body {
 }
 
 #fullscreen-progress-image {
-  background: url("../assets/hero_progress_image.jpg") no-repeat center
-    center/cover;
+  background: url("../assets/30_05/image15.jpg") no-repeat center center/cover;
 }
 
 #fullscreen-image::before,
@@ -204,7 +203,7 @@ body {
 .gallery {
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(20, 400px);
+  grid-template-columns: repeat(39, 450px);
   grid-template-rows: 1fr;
   grid-column-gap: 1rem;
   overflow-x: scroll;
@@ -907,39 +906,222 @@ th {
   flex: 1;
 }
 
-.image-28-05-01{
-    background-image: url("../assets/28_05/image1.jpg");
+.image-28-05-01 {
+  background-image: url("../assets/28_05/image1.jpg");
   flex: 1;
 }
-.image-28-05-02{
-    background-image: url("../assets/28_05/image2.jpg");
+.image-28-05-02 {
+  background-image: url("../assets/28_05/image2.jpg");
   flex: 1;
 }
-.image-28-05-03{
-    background-image: url("../assets/28_05/image3.jpeg");
+.image-28-05-03 {
+  background-image: url("../assets/28_05/image3.jpeg");
   flex: 1;
 }
-.image-28-05-04{
-    background-image: url("../assets/28_05/image4.jpeg");
+.image-28-05-04 {
+  background-image: url("../assets/28_05/image4.jpeg");
   flex: 1;
 }
-.image-28-05-05{
-    background-image: url("../assets/28_05/image5.jpeg");
+.image-28-05-05 {
+  background-image: url("../assets/28_05/image5.jpeg");
   flex: 1;
 }
-.image-28-05-06{
-    background-image: url("../assets/28_05/image6.jpeg");
+.image-28-05-06 {
+  background-image: url("../assets/28_05/image6.jpeg");
   flex: 1;
 }
-.image-28-05-07{
-    background-image: url("../assets/28_05/image7.jpeg");
+.image-28-05-07 {
+  background-image: url("../assets/28_05/image7.jpeg");
   flex: 1;
 }
-.image-28-05-08{
-    background-image: url("../assets/28_05/image8.jpeg");
+.image-28-05-08 {
+  background-image: url("../assets/28_05/image8.jpeg");
   flex: 1;
 }
-
+.image-30-05-01 {
+  background-image: url("../assets/30_05/image1.jpeg");
+  flex: 1;
+}
+.image-30-05-02 {
+  background-image: url("../assets/30_05/image2.jpeg");
+  flex: 1;
+}
+.image-30-05-03 {
+  background-image: url("../assets/30_05/image3.jpeg");
+  flex: 1;
+}
+.image-30-05-04 {
+  background-image: url("../assets/30_05/image4.jpeg");
+  flex: 1;
+}
+.image-30-05-05 {
+  background-image: url("../assets/30_05/image5.jpeg");
+  flex: 1;
+}
+.image-30-05-06 {
+  background-image: url("../assets/30_05/image6.jpeg");
+  flex: 1;
+}
+.image-30-05-07 {
+  background-image: url("../assets/30_05/image7.jpeg");
+  flex: 1;
+}
+.image-30-05-08 {
+  background-image: url("../assets/30_05/image8.jpeg");
+  flex: 1;
+}
+.image-30-05-09 {
+  background-image: url("../assets/30_05/image9.jpeg");
+  flex: 1;
+}
+.image-30-05-10 {
+  background-image: url("../assets/30_05/image10.jpeg");
+  flex: 1;
+}
+.image-30-05-11 {
+  background-image: url("../assets/30_05/image11.jpg");
+  flex: 1;
+}
+.image-30-05-12 {
+  background-image: url("../assets/30_05/image12.jpg");
+  flex: 1;
+}
+.image-30-05-13 {
+  background-image: url("../assets/30_05/image13.jpg");
+  flex: 1;
+}
+.image-30-05-14 {
+  background-image: url("../assets/30_05/image14.jpg");
+  flex: 1;
+}
+.image-30-05-15 {
+  background-image: url("../assets/30_05/image15.jpg");
+  flex: 1;
+}
+.image-30-05-16 {
+  background-image: url("../assets/30_05/image16.jpg");
+  flex: 1;
+}
+.image-31-05-01 {
+  background-image: url("../assets/31_05/image1.jpeg");
+  flex: 1;
+}
+.image-31-05-02 {
+  background-image: url("../assets/31_05/image2.jpeg");
+  flex: 1;
+}
+.image-31-05-03 {
+  background-image: url("../assets/31_05/image3.jpeg");
+  flex: 1;
+}
+.image-31-05-04 {
+  background-image: url("../assets/31_05/image4.jpeg");
+  flex: 1;
+}
+.image-31-05-05 {
+  background-image: url("../assets/31_05/image5.jpeg");
+  flex: 1;
+}
+.image-31-05-06 {
+  background-image: url("../assets/31_05/image6.jpeg");
+  flex: 1;
+}
+.image-31-05-07 {
+  background-image: url("../assets/31_05/image7.jpeg");
+  flex: 1;
+}
+.image-31-05-08 {
+  background-image: url("../assets/31_05/image8.jpeg");
+  flex: 1;
+}
+.image-31-05-09 {
+  background-image: url("../assets/31_05/image9.jpeg");
+  flex: 1;
+}
+.image-31-05-10 {
+  background-image: url("../assets/31_05/image10.jpeg");
+  flex: 1;
+}
+.image-31-05-11 {
+  background-image: url("../assets/31_05/image11.jpeg");
+  flex: 1;
+}
+.image-31-05-12 {
+  background-image: url("../assets/31_05/image12.jpeg");
+  flex: 1;
+}
+.image-31-05-13 {
+  background-image: url("../assets/31_05/image13.jpeg");
+  flex: 1;
+}
+.image-31-05-14 {
+  background-image: url("../assets/31_05/image14.jpeg");
+  flex: 1;
+}
+.image-31-05-15 {
+  background-image: url("../assets/31_05/image15.jpeg");
+  flex: 1;
+}
+.image-31-05-16 {
+  background-image: url("../assets/31_05/image16.jpeg");
+  flex: 1;
+}
+.image-31-05-17 {
+  background-image: url("../assets/31_05/image17.jpeg");
+  flex: 1;
+}
+.image-31-05-18 {
+  background-image: url("../assets/31_05/image18.jpeg");
+  flex: 1;
+}
+.image-31-05-19 {
+  background-image: url("../assets/31_05/image19.jpeg");
+  flex: 1;
+}
+.image-31-05-20 {
+  background-image: url("../assets/31_05/image20.jpeg");
+  flex: 1;
+}
+.image-31-05-21 {
+  background-image: url("../assets/31_05/image21.jpeg");
+  flex: 1;
+}
+.image-31-05-22 {
+  background-image: url("../assets/31_05/image22.jpeg");
+  flex: 1;
+}
+.image-31-05-23 {
+  background-image: url("../assets/31_05/image23.jpeg");
+  flex: 1;
+}
+.image-31-05-24 {
+  background-image: url("../assets/31_05/image24.jpeg");
+  flex: 1;
+}
+.image-31-05-25 {
+  background-image: url("../assets/31_05/image25.jpeg");
+  flex: 1;
+}
+.image-31-05-26 {
+  background-image: url("../assets/31_05/image26.jpeg");
+  flex: 1;
+}
+.image-31-05-27 {
+  background-image: url("../assets/31_05/image27.jpeg");
+  flex: 1;
+}
+.image-31-05-28 {
+  background-image: url("../assets/31_05/image28.jpeg");
+  flex: 1;
+}
+.image-31-05-29 {
+  background-image: url("../assets/31_05/image29.jpeg");
+  flex: 1;
+}
+.image-31-05-30 {
+  background-image: url("../assets/31_05/image30.jpeg");
+  flex: 1;
+}
 
 #expectations-container {
   display: flex;
@@ -1025,6 +1207,7 @@ th {
 #info-box img {
   flex: 1;
   max-width: 80%;
+  max-height: 500px;
   border-radius: 10px;
   object-fit: cover;
   margin-left: 5rem;
