@@ -1,5 +1,4 @@
 async function fetchData(file) {
-  console.log(`Fetching data from: ${file}`); 
   const response = await fetch(file);
   if (!response.ok) {
     console.error(`Failed to fetch ${file}:`, response.statusText); 
@@ -97,7 +96,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const studentsTableContainer = document.querySelector("#students-table");
     if (studentsTableContainer) {
       const students = await fetchData('src/students.json');
-      console.log('Students data:', students); 
       generateTable("#students-table", students, 3);
     }
 
