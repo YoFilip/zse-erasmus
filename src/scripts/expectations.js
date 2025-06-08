@@ -8,7 +8,7 @@ async function fetchExpectations(file) {
 }
 
 function populateExpectations(testimonials) {
-  const wrapper = document.querySelector(".expectations-wrapper"); 
+  const wrapper = document.querySelector(".expectations-wrapper");
 
   wrapper.innerHTML = "";
 
@@ -33,7 +33,9 @@ function populateExpectations(testimonials) {
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const testimonials = await fetchExpectations("src/studentExpectations.json");
+    const testimonials = await fetchExpectations(
+      "src/studentExpectations.json"
+    );
     populateExpectations(testimonials);
   } catch (error) {
     console.error("Error loading testimonials:", error);
