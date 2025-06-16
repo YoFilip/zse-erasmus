@@ -15,7 +15,9 @@ function createCell(content, isLink = false) {
     link.href = content;
     link.textContent = "Zobacz więcej";
     link.style.color = "#333";
-    link.target = "_blank";
+    if (!content.includes("additional.html")) {
+      link.target = "_blank";
+    }
     cell.appendChild(link);
   } else {
     cell.textContent = content || "Brak danych";

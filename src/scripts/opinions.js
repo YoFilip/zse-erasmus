@@ -14,7 +14,7 @@ function populateOpinions(opinions) {
 
   opinions.forEach((opinion) => {
     const opinionDiv = document.createElement("div");
-    opinionDiv.classList.add("expectations"); // identyczna klasa jak w expectations.js
+    opinionDiv.classList.add("expectations");
 
     const nameElement = document.createElement("h3");
     nameElement.classList.add("expectations-name");
